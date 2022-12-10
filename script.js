@@ -42,7 +42,28 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-player = getPlayerChoice();
-comp = getComputerChoice();
+function playGame(roundNumber) {
+    let playerScore = 0;
+    let computerScore = 0;
+    let tieNumber = 0;
+    for (let i = 0; i < roundNumber; i++) {
+        let playerChoice = getPlayerChoice();
+        let computerChoice = getComputerChoice();
+        let result = playRound(playerChoice, computerChoice)
 
-console.log(playRound(player, comp));
+        console.log(result);
+        if (result == 'You win!') {
+            playerScore++;
+        } else if (result == "You lose!") {
+            computerScore++;
+        } else {
+            tieNumber++;
+        }
+        console.log(`Player: ${playerScore} \n Computer: ${computerScore} \n Ties: ${tieNumber}`);
+    }
+
+    console.log(`Final score:\n Player: ${playerScore} \n Computer: ${computerScore} \n Ties: ${tieNumber}`);
+}
+
+let rounds = prompt('How many rounds do you want to play?');
+playGame(rounds);
