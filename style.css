@@ -1,0 +1,116 @@
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-text {
+    min-height: 4rem;
+}
+
+.game-space {
+    background-color: brown;
+    width: 50%;
+    min-height: 30rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-space {
+    background-color: lightblue;
+    width: 45%;
+}
+
+.computer-space {
+    background-color: lightgoldenrodyellow;
+    width: 45%;
+}

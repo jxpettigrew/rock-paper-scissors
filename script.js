@@ -1,16 +1,24 @@
 function getComputerChoice() {
     randomInt = Math.floor(Math.random() * 3);
-    if (randomInt === 0) {
+    switch (randomInt) {
+        case 0:
+            return 'rock'
+        case 1:
+            return 'paper'
+        case 2:
+            return 'scissors'
+    }
+    /*if (randomInt === 0) {
         return 'rock';
     } else if (randomInt === 1) {
         return 'paper';
     } else {
         return 'scissors';
-    }
+    }*/
 }
 
 function getPlayerChoice() {
-    playerInput = prompt('Rock, paper, or scissors? Type your selection below:');
+    //playerInput = prompt('Rock, paper, or scissors? Type your selection below:');
     return playerInput.trim().toLowerCase();
 }
 
@@ -65,5 +73,5 @@ function playGame(roundNumber) {
     console.log(`Final score:\n Player: ${playerScore} \n Computer: ${computerScore} \n Ties: ${tieNumber}`);
 }
 
-let rounds = prompt('How many rounds do you want to play?');
+//let rounds = prompt('How many rounds do you want to play?');
 playGame(rounds);
