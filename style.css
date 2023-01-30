@@ -114,3 +114,11 @@ h2 {
     background-color: lightgoldenrodyellow;
     width: 45%;
 }
+
+.choice {
+    margin: 10rem 0;
+}
+
+.controls {
+    display: none;
+}
