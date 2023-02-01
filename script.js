@@ -4,12 +4,15 @@ function getComputerChoice() {
     switch (randomInt) {
         case 0:
             computerText.innerText = 'rock';
+            document.querySelector('.computer-space img').src = 'rock.svg';
             break;
         case 1:
             computerText.innerText = 'paper';
+            document.querySelector('.computer-space img').src = 'paper.svg';
             break;
         case 2:
             computerText.innerText = 'scissors';
+            document.querySelector('.computer-space img').src = 'scissors.svg';
             break;
     }
 }
@@ -18,6 +21,7 @@ const playerChoice = function () {
     const choice = this.innerHTML.toLowerCase();
     const playerText = document.querySelector('.player-space .choice');
     playerText.innerText = choice;
+    document.querySelector('.player-space img').src = `${choice}.svg`;
 }
 
 const checkScore = function () {

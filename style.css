@@ -73,14 +73,51 @@ video {
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: mintcream;
+}
+
 h1 {
-    font-size: 2.5rem;
-    margin: 2.3rem;
+    font-size: 4rem;
+    margin: 1rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.7rem;
+    margin: 1rem 0;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: .5rem 2rem;
+    margin: .8rem 1rem;
+    border-radius: 1rem;
+    border-color: darkslategrey;
+}
+
+footer {
     margin: 1rem;
+}
+
+a {
+    color: darkslategrey;
+}
+
+.rock {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4.5rem;
+}
+
+.paper {
+    font-family: 'Arvo', serif;
+}
+
+.scissors {
+    font-family: 'Satisfy', cursive;
+    font-size: 4.3rem;
 }
 
 .container {
@@ -95,28 +132,43 @@ h2 {
 
 .game-text {
     min-height: 4rem;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .game-space {
-    background-color: brown;
+    background-color: white;
     width: 50%;
     min-height: 30rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .player-space {
-    background-color: lightblue;
+    background-color: rgb(242, 190, 20);
+    border: 2px solid darkslategrey;
     width: 45%;
 }
 
+.player-space p,
+.computer-space p {
+    display: none;
+}
+
+.player-space img,
+.computer-space img {
+    width: 85%;
+    margin-top: 2rem;
+}
+
 .computer-space {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(242, 190, 20);
+    border: 2px solid darkslategrey;
     width: 45%;
 }
 
 .choice {
-    margin: 10rem 0;
+    margin: 2rem 0;
 }
 
 .controls {
